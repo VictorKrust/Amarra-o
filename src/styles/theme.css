@@ -1,0 +1,66 @@
+:root {
+    /* Cores principais */
+    --roxo-profundo: #dc2626;
+    --lilas-suave: #ef4444;
+    --lavanda-claro: #da9c9c;
+    --rosa-mistico: #d14283;
+    
+    /* Cores neutras */
+    --branco: #da9c9c;
+    --preto: #da9c9c;
+    --cinza-claro: #da9c9c;
+    --cinza-medio: #da9c9c;
+    --cinza-escuro: #da9c9c;
+    
+    /* Cores de estado */
+    --sucesso: #4caf50;
+    --erro: #f44336;
+    --alerta: #ff9800;
+    
+    /* Gradientes */
+    --gradiente-mistico: linear-gradient(135deg, var(--roxo-profundo), var(--rosa-mistico));
+    --gradiente-suave: linear-gradient(135deg, var(--lilas-suave), var(--lavanda-claro));
+    
+    /* Sombras */
+    --sombra-suave: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --sombra-media: 0 4px 20px rgba(0, 0, 0, 0.15);
+    --sombra-forte: 0 8px 30px rgba(0, 0, 0, 0.2);
+    
+    /* Arredondamentos */
+    --borda-pequena: 4px;
+    --borda-media: 8px;
+    --borda-grande: 16px;
+    --borda-redonda: 50%;
+    
+    /* Espaçamentos */
+    --espacamento-xs: 0.25rem;
+    --espacamento-sm: 0.5rem;
+    --espacamento-md: 1rem;
+    --espacamento-lg: 1.5rem;
+    --espacamento-xl: 2rem;
+    --espacamento-xxl: 3rem;
+    
+    /* Fontes */
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-corpo: 'Montserrat', sans-serif;
+    
+    /* Tamanhos de fonte */
+    --fonte-xs: 0.75rem;
+    --fonte-sm: 0.875rem;
+    --fonte-md: 1rem;
+    --fonte-lg: 1.25rem;
+    --fonte-xl: 1.5rem;
+    --fonte-xxl: 2rem;
+    --fonte-xxxl: 3rem;
+    
+    /* Larguras de container */
+    --container-sm: 540px;
+    --container-md: 720px;
+    --container-lg: 960px;
+    --container-xl: 1140px;
+    
+    /* Transições */
+    --transicao-rapida: 0.2s ease;
+    --transicao-media: 0.3s ease;
+    --transicao-lenta: 0.5s ease;
+}

@@ -1,0 +1,73 @@
+.about-section {
+  background-color: var(--cinza-claro); /* Fundo suave para contraste */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image-container {
+  flex: 0 0 40%; /* Imagem ocupa 40% do espaço */
+  max-width: 400px; /* Limita o tamanho máximo da imagem */
+  border-radius: 15px; /* Bordas arredondadas para suavidade */
+  overflow: hidden; /* Garante que a imagem não ultrapasse as bordas */
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid var(--lavanda-claro); /* Borda sutil na cor lavanda */
+}
+
+.about-text-container {
+  flex: 1;
+}
+
+.about-text-container .section-title {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.about-text-container .section-subtitle {
+  font-size: 1.1rem;
+  color: var(--lilas-suave);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-text-container p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: var(--cinza-texto);
+}
+
+/* Responsividade para a seção Sobre */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image-container {
+    margin-bottom: 30px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-text-container .section-title,
+  .about-text-container .section-subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image-container {
+    max-width: 300px;
+  }
+}
+

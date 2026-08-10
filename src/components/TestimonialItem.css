@@ -1,0 +1,66 @@
+.testimonial-item {
+  background-color: var(--lavanda-claro);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Espaço entre depoimentos se listados verticalmente */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  border-left: 5px solid var(--lilas-suave);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo do card */
+  text-align: center;
+}
+
+.testimonial-image-container {
+  margin-bottom: 15px;
+  width: 100px; /* Tamanho da imagem do cliente */
+  height: 100px;
+  border-radius: 50%; /* Imagem redonda */
+  overflow: hidden;
+  border: 3px solid var(--lilas-suave);
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: var(--cinza-texto);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.testimonial-text::before {
+  content: "\201C"; /* Aspas de abertura */
+  font-family: var(--fonte-titulo);
+  font-size: 3rem;
+  color: var(--lilas-suave);
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  opacity: 0.5;
+}
+
+.testimonial-text::after {
+  content: "\201D"; /* Aspas de fechamento */
+  font-family: var(--fonte-titulo);
+  font-size: 3rem;
+  color: var(--lilas-suave);
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  opacity: 0.5;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: var(--roxo-profundo);
+  font-size: 0.9rem;
+}
+

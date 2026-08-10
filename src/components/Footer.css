@@ -1,0 +1,119 @@
+.site-footer {
+  background-color: var(--roxo-profundo);
+  color: var(--lavanda-claro);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px; /* Garante que as seções não fiquem muito espremidas */
+}
+
+.footer-section-title {
+  font-family: var(--fonte-titulo);
+  color: var(--branco);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--lilas-suave);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-about p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--lavanda-claro);
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: var(--lavanda-claro);
+  font-size: 0.95rem;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: var(--branco);
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a, .social-icon-placeholder {
+  color: var(--lavanda-claro);
+  font-size: 1.5rem; /* Tamanho dos ícones ou placeholders */
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  /* Estilo para placeholder de ícone */
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--lavanda-claro);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social-icons a:hover, .social-icon-placeholder:hover {
+  color: var(--branco);
+  border-color: var(--branco);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(242, 230, 255, 0.2); /* Linha sutil com lavanda claro */
+  font-size: 0.85rem;
+}
+
+.footer-bottom p {
+  margin-bottom: 5px;
+  color: var(--lavanda-claro);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .footer-section-title {
+    display: block;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+

@@ -1,0 +1,32 @@
+.whatsapp-float-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366; /* Cor oficial do WhatsApp */
+  color: var(--branco);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Para ficar sobre outros elementos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  color: var(--branco); /* Mantém a cor do ícone no hover */
+}
+
+.whatsapp-icon-placeholder {
+  font-size: 1.8rem; /* Ajustar conforme o ícone real */
+}
+
+/* Se usar react-icons, o ícone SVG já terá seu tamanho definido pela prop size */
+/* .whatsapp-float-button svg { */
+/*   fill: var(--branco); */
+/* } */
+

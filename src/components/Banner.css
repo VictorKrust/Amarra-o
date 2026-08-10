@@ -1,0 +1,61 @@
+.banner-section {
+  color: var(--branco);
+  padding: 80px 0; /* Aumentar padding para mais impacto */
+  position: relative;
+  overflow: hidden; /* Para efeitos de fundo, se houver */
+}
+
+/* Efeito de fundo sutil para o banner - pode ser uma imagem ou degradê mais elaborado */
+.banner-section::before {
+  content: 
+otation_marker_1_0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.85) 0%, rgba(239, 68, 68, 0.7) 100%), url("../assets/images/banner_background_mistico.jpg"); /* Exemplo com imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+  filter: brightness(0.7);
+}
+
+.banner-title {
+  font-size: 3.2rem; /* Aumentar um pouco */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--branco); /* Garantir contraste */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 0 15px var(--lavanda-claro); /* Sombra para legibilidade e brilho */
+}
+
+.banner-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--lavanda-claro); /* Cor mais suave para subtítulo */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Ajustes para o botão no banner */
+.banner-section .button-primary {
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 60px 0;
+  }
+  .banner-title {
+    font-size: 2.5rem;
+  }
+  .banner-subtitle {
+    font-size: 1.1rem;
+  }
+}
+

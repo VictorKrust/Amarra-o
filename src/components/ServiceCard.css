@@ -1,0 +1,50 @@
+.service-card {
+  background-color: var(--branco);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--lavanda-claro);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Para garantir que todos os cards na mesma linha tenham a mesma altura */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(220, 38, 38, 0.15), 0 0 15px var(--lilas-suave);
+}
+
+.service-icon-placeholder {
+  font-size: 3rem; /* Tamanho do ícone placeholder */
+  color: var(--lilas-suave);
+  margin-bottom: 20px;
+  /* Se usar SVGs ou imagens, ajustar o estilo aqui */
+  /* Exemplo para SVG: */
+  /* svg.service-icon { */
+  /*   fill: var(--lilas-suave); */
+  /*   margin-bottom: 20px; */
+  /* } */
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: var(--roxo-profundo);
+  margin-bottom: 15px;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: var(--cinza-texto);
+  margin-bottom: 25px;
+  flex-grow: 1; /* Faz a descrição ocupar o espaço disponível */
+}
+
+.service-button {
+  margin-top: auto; /* Alinha o botão na parte inferior do card */
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+

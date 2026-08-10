@@ -1,0 +1,34 @@
+.video-section {
+  background-color: var(--cinza-claro); /* Ou outra cor de fundo suave */
+}
+
+.video-section .section-title,
+.video-section .section-subtitle {
+  margin-bottom: 30px;
+}
+
+.video-player-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Limita a largura máxima do vídeo */
+  margin: 0 auto; /* Centraliza o container do vídeo */
+  border-radius: 10px;
+  overflow: hidden; /* Garante que o iframe/video não ultrapasse as bordas arredondadas */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Mantém a proporção do vídeo (ex: 16:9) */
+.aspect-ratio-16-9 {
+  padding-bottom: 56.25%; /* 9 / 16 = 0.5625 */
+}
+
+.video-player-container iframe,
+.video-player-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove borda do iframe */
+}
+

@@ -1,0 +1,22 @@
+.services-section {
+  background-color: var(--branco); /* Ou um lilás bem claro como var(--lavanda-claro) */
+}
+
+.services-section .section-title,
+.services-section .section-subtitle {
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grid responsivo */
+  gap: 30px;
+}
+
+/* Ajustes para telas menores, se necessário, além do auto-fit */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+  }
+}
+
