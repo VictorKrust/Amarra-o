@@ -1,0 +1,83 @@
+:root {
+    /* Cores principais - Paleta sofisticada roxo/dourado */
+    --roxo-profundo: #1a0a2e;
+    --roxo-medio: #2d1b4e;
+    --roxo-vibrante: #7c3aed;
+    --roxo-claro: #a78bfa;
+    --dourado: #d4a853;
+    --dourado-claro: #f0d78c;
+    --rosa-mistico: #c026d3;
+    
+    /* Cores neutras */
+    --branco: #ffffff;
+    --branco-off: #faf8ff;
+    --preto: #0f0a1a;
+    --cinza-claro: #f5f3f7;
+    --cinza-medio: #9ca3af;
+    --cinza-escuro: #374151;
+    --cinza-texto: #4b5563;
+    
+    /* Cores de estado */
+    --sucesso: #10b981;
+    --erro: #ef4444;
+    --alerta: #f59e0b;
+    
+    /* Gradientes */
+    --gradiente-hero: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #3b1a6e 100%);
+    --gradiente-mistico: linear-gradient(135deg, #7c3aed, #c026d3);
+    --gradiente-dourado: linear-gradient(135deg, #d4a853, #f0d78c);
+    --gradiente-suave: linear-gradient(180deg, #faf8ff 0%, #f3e8ff 100%);
+    --gradiente-card: linear-gradient(145deg, rgba(124, 58, 237, 0.05), rgba(192, 38, 211, 0.05));
+    --gradiente-glass: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    
+    /* Sombras */
+    --sombra-suave: 0 2px 15px rgba(124, 58, 237, 0.08);
+    --sombra-media: 0 8px 30px rgba(124, 58, 237, 0.12);
+    --sombra-forte: 0 20px 60px rgba(26, 10, 46, 0.2);
+    --sombra-glow: 0 0 40px rgba(124, 58, 237, 0.3);
+    --sombra-dourada: 0 4px 20px rgba(212, 168, 83, 0.3);
+    
+    /* Arredondamentos */
+    --borda-pequena: 6px;
+    --borda-media: 12px;
+    --borda-grande: 20px;
+    --borda-xl: 28px;
+    --borda-redonda: 50%;
+    
+    /* Espaçamentos */
+    --espacamento-xs: 0.25rem;
+    --espacamento-sm: 0.5rem;
+    --espacamento-md: 1rem;
+    --espacamento-lg: 1.5rem;
+    --espacamento-xl: 2rem;
+    --espacamento-xxl: 3rem;
+    --espacamento-3xl: 4rem;
+    --espacamento-4xl: 6rem;
+    
+    /* Fontes */
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-corpo: 'Montserrat', sans-serif;
+    
+    /* Tamanhos de fonte */
+    --fonte-xs: 0.75rem;
+    --fonte-sm: 0.875rem;
+    --fonte-md: 1rem;
+    --fonte-lg: 1.125rem;
+    --fonte-xl: 1.25rem;
+    --fonte-xxl: 1.75rem;
+    --fonte-3xl: 2.5rem;
+    --fonte-4xl: 3.5rem;
+    --fonte-5xl: 4.5rem;
+    
+    /* Larguras de container */
+    --container-sm: 540px;
+    --container-md: 720px;
+    --container-lg: 960px;
+    --container-xl: 1200px;
+    
+    /* Transições */
+    --transicao-rapida: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transicao-media: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transicao-lenta: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transicao-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

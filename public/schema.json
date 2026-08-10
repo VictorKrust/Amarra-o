@@ -1,0 +1,32 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Priscila Kollin",
+  "description": "Especialista em amarração amorosa, reconciliação de casais e consultas espirituais",
+  "image": "https://priscila-kollin.com/images/sobre_11.34.41_1.jpeg",
+  "telephone": "+5511987654321",
+  "url": "https://priscila-kollin.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BR"
+  },
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.instagram.com/priscilakollin",
+    "https://www.facebook.com/priscilakollin"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "18:00"
+  }
+}
+</script>
