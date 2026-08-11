@@ -67,6 +67,53 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 
+    // ---- ANIMATED COUNTER FOR STATS ----
+    var statNumbers = document.querySelectorAll('.stat-number');
+    var statsAnimated = false;
+
+    function animateCounter(el) {
+        var target = el.getAttribute('data-target');
+        var suffix = el.getAttribute('data-suffix') || '';
+        var targetNum = parseInt(target);
+        var duration = 2000;
+        var start = 0;
+        var startTime = null;
+
+        function easeOutQuart(t) {
+            return 1 - Math.pow(1 - t, 4);
+        }
+
+        function step(timestamp) {
+            if (!startTime) startTime = timestamp;
+            var progress = Math.min((timestamp - startTime) / duration, 1);
+            var easedProgress = easeOutQuart(progress);
+            var current = Math.floor(easedProgress * targetNum);
+            el.textContent = current + suffix;
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            } else {
+                el.textContent = target + suffix;
+            }
+        }
+        requestAnimationFrame(step);
+    }
+
+    function checkStatsInView() {
+        if (statsAnimated || statNumbers.length === 0) return;
+        var statsSection = statNumbers[0].closest('.about-stats');
+        if (!statsSection) return;
+        var rect = statsSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            statsAnimated = true;
+            statNumbers.forEach(function (el) {
+                animateCounter(el);
+            });
+        }
+    }
+
+    window.addEventListener('scroll', checkStatsInView);
+    checkStatsInView();
+
     // ---- FORM VALIDATION ----
     var contactForm = document.getElementById('contact-form');
 
